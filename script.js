@@ -2,6 +2,7 @@ const url ='https://digimon-api.vercel.app/api/digimon';
 
 const lista = document.querySelector('ol')
 let resposta ='';
+function buscarApi(){
 fetch(url).then(res =>  res.json()).then(dados=> {
   
   dados.map(dado => {
@@ -18,7 +19,7 @@ fetch(url).then(res =>  res.json()).then(dados=> {
   })
   return resposta = dados;
 })
-
+}
 let entrada = document.querySelector('input');
 
 let btn = document.querySelector('#buscar');
@@ -40,6 +41,9 @@ let itensFiltrados = resposta.filter(item => item.name.toLowerCase() === nome.to
 
  
 }
+document.querySelector('.todos').addEventListener('click', ()=>{
+  buscarApi()
+})
 
 
 

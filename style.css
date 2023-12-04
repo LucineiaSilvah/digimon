@@ -7,16 +7,15 @@
   text-decoration: none;
   
 }
-body{
- 
-}
+
 .container{
   display: flex;
   flex-direction: column;
   align-items: center;
   background:#fff;
   height: auto;
-  margin: 0 auto;
+  margin:0 auto;
+  padding: 0 15px;
   background: url('bg.jpg')no-repeat center / cover;
   
 }
@@ -25,6 +24,8 @@ body{
   padding: 20px;
   margin: auto;
   font-family: 'Pixelify Sans', sans-serif;
+  color: #F2D208;
+  text-shadow: -1px 2px 4px #DE7D11;
   font-size: 3rem;
 
 }
@@ -68,6 +69,13 @@ label{
   color: #0c0d0d;
   padding-left: 5px;
   font-size: 1.5rem;
+}
+.todos{
+  width: 50px;
+  height: 40px;
+  border: 2px double #000;
+  font-weight: 600;
+  background-color:#1557AE;
 }
 .digimom{
   display: flex;
@@ -126,7 +134,7 @@ label{
   color: #F2D208;
   font-size: 1.2rem;
   font-weight: bold;
-  text-shadow: -2px 2px 2px black;
+  text-shadow: -2px 1px 2px #DE7D11;
 }
 .digimom img{
   width: 100%;
