@@ -7,7 +7,9 @@
   text-decoration: none;
   
 }
-
+body{
+ 
+}
 .container{
   display: flex;
   flex-direction: column;
@@ -15,7 +17,7 @@
   background:#fff;
   height: auto;
   margin: 0 auto;
- 
+  background: url('bg.jpg')no-repeat center / cover;
   
 }
 .title{
