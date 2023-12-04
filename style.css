@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+  text-decoration: none;
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:#fff;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: url('bg.jpg')no-repeat center / cover;
+  
+}
+.title{
+  text-align: center;
+  padding: 20px;
+  color: #F6E267;
+  width: 50%;
+  margin: auto;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 3rem;
+
+}
+
+.digimons{
+  display: grid;
+  width:90%;
+  min-height: 400px;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 0 auto;
+  margin-bottom:20px;
+ list-style: none;
+ background-color: rgba(84, 236, 193, 0.304);
+  border: 12px double #000;
+  padding: 2rem;
+
+}
+.search{
+  display: flex;
+  align-items: center;
+  border: 2px double  #1557AE;
+  margin-bottom: 10px;
+  background-color: rgba(84, 236, 193, 0.304);
+
+}
+.search i {
+  padding: 10px;
+}
+input{
+  width: 200px;
+  outline: none;
+  border: none;
+  height: 40px;
+  color:#1557AE;
+  background-color: transparent;
+
+}
+label{
+  font-weight: 900;
+  color: #0c0d0d;
+  padding-left: 5px;
+  font-size: 1.5rem;
+}
+.digimom{
+  display: flex;
+  flex-direction: row;
+  background: white;
+  box-shadow: -1px 4px 8px #08def2;
+  overflow: hidden;
+  border-radius: 2rem;
+  height:150px;
+  padding: 1rem 1rem 0 1rem;
+  
+}
+@media screen and (min-width: 500px){
+  .digimons{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+@media screen and (min-width: 768px){
+  .digimons{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+ 
+  .digimons {
+   width: 100%;
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+
+}
+.digimom .detail{
+  display:flex;
+  flex-direction:column;
+  
+  align-items:flex-start;
+  padding-bottom:1rem;
+ width: 40%;
+ height: 100%;
+ 
+ 
+}
+
+.nome , .level{
+  z-index: 1;
+  flex-wrap: wrap;
+  border-bottom:2px solid  #DE7D11;
+  border-radius: 3px;
+  padding:5px;
+  margin: 5px;
+ color: #000;
+}
+.nome{
+  color: #F2D208;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: -2px 2px 2px black;
+}
+.digimom img{
+  width: 100%;
+ 
+}
+footer{
+  padding: 10px;
+ 
+  text-shadow: -1px 2px 2px black;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  background-color: #66C1D2;
+}
+a{
+  color: #F2D208;
+}
